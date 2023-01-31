@@ -1,0 +1,224 @@
+/* start variables */
+:root {
+    --main-color: #34a64f;
+    --second-color:#000000;
+    --text-color: white;
+    --padding-section: 50px;
+}
+/* end variables */
+/* start global rules */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Jomhuria', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+ul li a {
+    text-decoration: none;
+}
+.continar {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* media quary>responseves*/
+/*meduim 768px 991px*/
+@media (min-width:768px) {
+    .continar {
+        width: 750px;
+    }
+}
+/* large 992px 1199px*/
+@media (min-width: 992px) {
+    .continar {
+        width: 970px;
+    }
+}
+/*X-Large 1200px to 1399px*/
+@media (min-width: 1200px) {
+    .continar {
+        width: 1170px;
+    }
+}
+/*end Global Rules*/
+/* start header */
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    left: 0;
+}
+header .continar {
+    display: flex;
+    height: 90px;
+    position: relative;
+}
+header .continar::after {
+    content: "";
+    background-color: var(--second-color);
+    width: calc(100% - 30px);
+    height: 1px;
+    bottom: 0;
+    position: absolute;
+}
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .continar .Logo {
+    position: absolute;
+    top: 2%;
+}
+header .continar .Logo img {
+    width: 85px;
+    position: absolute;
+}
+header  nav {
+    width: 100%;
+}
+header nav .toggle-menu {
+    right: 60px;
+    position: absolute;
+    font-size: 19px;
+    height: 18px;
+    transition: 0.2s;
+    color: var(--text-color);
+}
+@media (min-width:768px) {
+    header nav .toggle-menu {
+        display: none;
+    }
+}
+header  nav ul {
+    display: flex;
+    direction: rtl;
+}
+@media (max-width:768px) {
+    header nav ul {
+        display: none;
+    }
+    header nav .toggle-menu:hover+ul {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 30px);
+        top: 100%;
+        position: absolute;
+        margin: 0;
+        background-color: rgb(0 0 0 / 50%);
+        /* حل مشكلة ال paddding ليش صفر؟ */
+        padding: 0;
+    }
+    header nav .toggle-menu:hover+ul li a {
+        padding: 15px;
+    }
+}
+header  nav ul li a{
+    display: block;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    padding: 36px 10px;
+    transition: 0.2s;
+    z-index: 2;
+    position: relative;
+}
+
+@media (max-width:767px) {
+    header nav ul li a:hover {
+            color: var(--main-color);
+            width: 100%;
+            border: 1px solid;
+        }
+}
+@media (min-width:768px) {
+    header nav ul li a:hover {
+        color: var(--main-color);
+        width: fit-content;
+        border-bottom: 1px solid;
+    }
+}
+header .continar .form {
+    color: var(--text-color);
+    font-size: 20px;
+    height: 20px;
+    width: 12px;
+    border-left: 1px solid;
+    display: block;
+    margin-left: 15px;
+    left: -20px;
+    position: relative;
+}
+header .continar .form i {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+/* End header */
+/* Start Slider  */
+.Slider {
+    position: relative;
+    background-image: url(../image/slider\ background.jpg);
+    background-color: #9c9c9cbd;
+    min-height: 100vh;
+    background-size: cover;
+}
+.Slider .contant {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    position: absolute;
+    background-color: rgb(0 0 0 / 30%);
+    width: 50%;
+    padding: 4px 76px 4px 22px;
+}
+@media (max-width:767px) {
+    .Slider .contant {
+        width: 100%;
+    }
+}
+.Slider .text {
+    color: var(--text-color);
+}
+.Slider .contant i {
+    right: 20px;
+    position: absolute;
+    top: 40%;
+    color: #ddd;
+    transform: translateY(50%);
+    font-size: 28px;
+}
+.Slider .bools {
+    display: flex;
+    position: absolute;
+    padding: 0;
+    left: 50%;
+    bottom: 0;
+}
+.Slider .bools li {
+        height: 18px;
+    width: 18px;
+    border: 1px solid var(--text-color);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.Slider .bools .Active {
+    background: var(--text-color);
+    border-color: var(--text-color);
+}
+/* End Slider */
