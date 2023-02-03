@@ -1,7 +1,7 @@
 /* start variables */
 :root {
     --main-color: #34a64f;
-    --second-color:#000000;
+    --second-color:#2a2a2a;
     --text-color: white;
     --padding-section: 50px;
 }
@@ -53,6 +53,38 @@ ul li a {
     }
 }
 /*end Global Rules*/
+/* Start main heading */
+.main-heading {
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);
+    position: relative;
+    margin-bottom: 20px;
+}
+.main-heading .continar {
+    margin-bottom: 30px;
+
+}
+.main-heading h4 {
+    color: var(--main-color);
+    font-size: 15px;
+    margin: 0 0 -10px 0;
+    position: relative;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.main-heading p {
+    max-width: 100%;
+    line-height: 1.2;
+    font-size: 29px;
+    font-weight: 500;
+    width: 300px;
+    margin: 15px 0 0 0;
+}
+.main-heading span {
+    color: var(--main-color);
+}
+/* End main heading */
+
 /* start header */
 header {
     position: absolute;
@@ -105,7 +137,10 @@ header nav .toggle-menu {
 }
 header  nav ul {
     display: flex;
-    direction: rtl;
+    margin: 0;
+        /* direction: rtl; */
+    left: -30px;
+    position: relative;
 }
 @media (max-width:768px) {
     header nav ul {
@@ -136,7 +171,6 @@ header  nav ul li a{
     z-index: 2;
     position: relative;
 }
-
 @media (max-width:767px) {
     header nav ul li a:hover {
             color: var(--main-color);
@@ -194,6 +228,17 @@ header .continar .form i {
 .Slider .text {
     color: var(--text-color);
 }
+.Slider .text span {
+    color: var(--main-color);
+    font-weight: 900;
+}
+.Slider .text h2 {
+    font-size: 26px;
+    font-weight: normal
+}
+.Slider .text p {
+    line-height: 1.5;
+}
 .Slider .contant i {
     right: 20px;
     position: absolute;
@@ -207,6 +252,7 @@ header .continar .form i {
     position: absolute;
     padding: 0;
     left: 50%;
+    transform: translateX(-50%);
     bottom: 0;
 }
 .Slider .bools li {
@@ -218,7 +264,80 @@ header .continar .form i {
 }
 
 .Slider .bools .Active {
-    background: var(--text-color);
-    border-color: var(--text-color);
+    background: var(--second-color);
+    border-color: var(--second-color);
 }
 /* End Slider */
+/* Start Servies */
+.Servies {
+    padding-bottom: var(--padding-section);
+    
+}
+.Servies::before {
+    content: '';
+    background-image: url(../image/services-left-dec.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    rotate: 270deg;
+    bottom: -266px;
+    width: 261px;
+    height: 368px;
+    z-index: -1;
+}
+.Servies .continar .page-Serv {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px , 1fr));
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    width: 100%;
+}
+.Servies .page-Serv .box {
+    border: 1px solid rgba(187, 187, 187, 0.6);
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+    max-height: 370px;
+}
+.Servies .page-Serv .box img {
+    width: 90px;
+    bottom: 10px;
+    position: relative;
+}
+.Servies .page-Serv .box .text {
+    margin: 10px;
+}
+.Servies .text  h4 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+/*  QUOting in HTML */
+.Servies .text  h4::before {
+    content: open-quote;
+    margin: 0 5px 0 ;
+}
+.Servies .text h4::after{
+    content: close-quote;
+    margin: 0 5px 0;
+}
+.Servies .text  p{
+    font-size: 12px;
+    line-height: 1.5;
+    color: #777;
+    margin-top: 0;
+}
+.Servies .text  a {
+    text-decoration: none;
+    color: var(--second-color);
+    background-color: hsl(0, 0%, 70%);
+    border: 0.1px solid;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 20px;
+    bottom: -20px;
+    position: relative;
+}
+/* End Servies */
