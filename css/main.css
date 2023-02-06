@@ -68,11 +68,21 @@ ul li a {
 }
 .main-heading h4 {
     color: var(--main-color);
-    font-size: 15px;
+    font-size: 17px;
     margin: 0 0 -10px 0;
     position: relative;
-    font-weight: normal;
     text-transform: uppercase;
+    font-weight: normal;
+    align-items: center;
+    display: inline-flex;
+    background-color: #34a64f36;
+    width: 150px;
+}
+.main-heading h4::before {
+    content: "";
+    height: 25px;
+    border-left: 3px solid var(--main-color);
+    padding: 5px;
 }
 .main-heading p {
     max-width: 100%;
@@ -222,7 +232,9 @@ header .continar .form i {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0 0 0 / 60%)
+    background-color: rgb(0 0 0 / 60%);
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
 }
 .Slider .contant {
     top: 50%;
@@ -365,6 +377,7 @@ header .continar .form i {
     padding-bottom: var(--padding-section);
     margin: 63px 0 0 ;
     padding: 10px;
+    text-align: center;
 }
 .Sales .side-bar h4 {
     color: var(--main-color);
@@ -374,6 +387,16 @@ header .continar .form i {
     position: relative;
     font-weight: normal;
     text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    background-color: #34a64f36;
+    width: 140px;
+}
+.Sales .side-bar h4::before {
+    content: "";
+    height: 30px;
+    border-left: 3px solid var(--main-color);
+    padding: 5px;
 }
 .Sales .side-bar p {
     margin-top: 15px;
@@ -391,19 +414,29 @@ header .continar .form i {
     display: flex;
     justify-content: space-evenly;;
 }
-
+@media (max-width:767px) {
+    .Sales .info-bar {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        width: 100%;
+        gap: 23px 35px;
+        border: 0.1px solid var(--pri-fontcolor);
+    }
+}
 .Sales .info-bar .box {
     display: inline-flex;
     margin-right: 10px;
     align-items: center;
 }
-.Sales .continar .page-Sales {
-}
-.Sales .page-Sales{}
-
 .Sales .info-bar .box img {
     width: 100px;
     height: 50px
+}
+@media (max-width:767px) {
+    .Sales .info-bar .box img {
+        width: 156px;
+        height: 74px;
+}
 }
 .Sales .page-Sales .sales {
     position: relative;
@@ -411,9 +444,6 @@ header .continar .form i {
     display: grid;
     grid-template-columns: repeat(auto-fill ,minmax(300px,1fr));
     gap: 15px 15px;
-}
-.Sales .page-Sales .info-bar {}
-.Sales .sales .card-sales {
 }
 .Sales .sales .card-sales img {
     width: 100px;
@@ -426,7 +456,11 @@ header .continar .form i {
     border-bottom-left-radius: 10px;
     border: 1px solid rgba(187, 187, 187, 0.6);
     box-shadow: 5px 8px 4px rgb(0 0 0 / 18%);
-    border-right: 3px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+.sales .info-sales:hover {
+    display: block;
+    position: relative;
 }
 .sales .info-sales .card-sales img {
     width: 70px;
@@ -443,17 +477,30 @@ header .continar .form i {
     font-weight: 500;
     padding: 5px;
     position: relative;
-    top: 10px;
 }
-.sales .info-sales .card-sales p {
-    font-size: 12px;
-    line-height: 1.5;
-    color: var(--pri-fontcolor);
-    margin-top: 16px;
-    max-width: 300px;
+.sales .info-sales:hover {
+    overflow: visible;
+    position: relative;
+}
+.sales .info-sales .text-colo .more {
     display: none;
-
 }
-.sales .info-sales .card-sales a:hover p {
+/* .sales .info-sales .text-colo {
+    position: relative;
+    overflow:hidden;
 }
+.sales .info-sales .text-colo .hover-effect {
+    background-image: url(../image/sales\ closed-bg.jpg);
+    width: 100%;
+    height: 270%;
+    bottom: 100%;
+    position: absolute;
+    transition: all .3s ease-in-out;
+    top: 100px;
+    opacity: 0;
+}
+.sales .info-sales .card-sales:hover .hover-effect {
+    top: 0;
+    opacity: 1;
+} */
 /* end Sales */
