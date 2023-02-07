@@ -504,3 +504,74 @@ header .continar .form i {
     opacity: 1;
 } */
 /* end Sales */
+/* Start Projects */
+.Projects {
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);
+    position: relative;
+    width: 100%;
+}
+.Projects .our-proj {
+    display: flex;
+    width: 100%;
+}
+@media (max-width:767px) {
+    .Projects .our-proj {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+}
+.Projects .our-proj .image-proj img {
+    height: 100%;
+    width: 100%;
+}
+.Projects .our-proj .text-proj {
+    border: 1px solid var(--pri-fontcolor);
+    padding: 30px 67px;
+    background-image: url(../image/sales\ closed-bg.jpg);
+    /* width: 50%; */
+}
+.Projects .our-proj .text-proj h3 {
+    color: var(--second-color);
+    font-size: 23px;
+    text-transform: capitalize;
+}
+.Projects .our-proj .text-proj h1 {
+    color: var(--second-color);
+    margin: 14px;
+    font-size: 23px;
+    text-transform: capitalize;
+    /* margin: 60px 0 32px;
+    max-width: 400px; */
+}
+.Projects .our-proj .text-proj h1 span {
+    color: var(--main-color);
+}
+.Projects .our-proj .text-proj h3 ~ p {
+    color: var(--second-color);
+    font-size: 15px;
+}
+.Projects .text-proj .skills-co {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    font-weight: 900;
+}
+@media (max-width:767px) {
+    .Projects .text-proj .skills-co {
+        display: block;
+        text-align: center;
+    }
+}
+.Projects .skills-co .COM-PRO {}
+.Projects .skills-co span {
+    color: var(--second-color);
+    font-size: 22px;
+}
+.Projects .skills-co .seens span + p {
+}
+.Projects .our-proj .text-proj .image-proj {}
+/* End Projects */
