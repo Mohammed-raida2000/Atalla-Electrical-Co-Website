@@ -608,3 +608,40 @@ header .continar .form i {
     margin-top: 0;
 }
 /* End Projects */
+/* Start Team */
+.Team {
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);
+}
+.Team .profile-team {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.Team .profile-team .boxs {
+    position: relative;
+    background: url(../image/sales\ closed-bg.jpg);
+    display: grid;
+    justify-content:center;
+    border: 0.1px solid var(--pri-fontcolor);
+    border-radius: 20px;
+}
+.Team .profile-team .boxs .text-team {
+    margin: 10px 0 10px;
+}
+.Team .profile-team .boxs img {
+    width: 150px;
+    border-radius: 50%;
+}
+.Team .boxs .text-team h3 {
+    font-size: 20px;
+}
+.Team .boxs .text-team span {
+    color: var(--main-color);
+    margin-left: 5px;
+}
+/* End Team */
