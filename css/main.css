@@ -647,3 +647,22 @@ header .continar .form i {
     margin-left: 5px;
 }
 /* End Team */
+/* Start footer */
+.footer {
+    padding-top: var(--padding-section);
+    background-color: black;
+    color: white;
+
+}
+.footer .foot {
+
+}
+.footer .foot img {}
+.footer .foot h3 {}
+.footer .foot .text-foot {
+
+}
+.footer .foot .contact-footer {
+
+}
+/* end  footer */
