@@ -175,6 +175,8 @@ header  nav ul {
         background-color: rgb(0 0 0 / 50%);
         /* حل مشكلة ال paddding ليش صفر؟ */
         padding: 0;
+        left: 15px;
+        direction: rtl;
     }
     header nav .toggle-menu:hover+ul li a {
         padding: 15px;
