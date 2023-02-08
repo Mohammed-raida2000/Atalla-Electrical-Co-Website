@@ -109,6 +109,13 @@ header .continar {
     height: 90px;
     position: relative;
 }
+header .continar a h3 {
+    margin: 0;
+    top: 58px;
+    position: relative;
+    color: var(--text-color);
+    text-decoration: none;
+}
 header .continar::after {
     content: "";
     background-color: var(--second-color);
@@ -522,6 +529,26 @@ header .continar .form i {
         width: 100%;
     }
 }
+.Projects .our-proj i { 
+    font-size: 34px;
+    color: white;
+    left: -50px;
+    top: 161px;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    background: var(--pri-fontcolor);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+@media (max-width:767px) {
+    .Projects .our-proj i {
+        display: none;
+        
+    }
+}
 .Projects .our-proj .image-proj img {
     height: 100%;
     width: 100%;
@@ -530,7 +557,12 @@ header .continar .form i {
     border: 1px solid var(--pri-fontcolor);
     padding: 30px 67px;
     background-image: url(../image/sales\ closed-bg.jpg);
-    /* width: 50%; */
+    width: 50%
+}
+@media (max-width:767px) {
+    .Projects .our-proj .text-proj {
+        width: 100%;
+    }
 }
 .Projects .our-proj .text-proj h3 {
     color: var(--second-color);
@@ -539,8 +571,8 @@ header .continar .form i {
 }
 .Projects .our-proj .text-proj h1 {
     color: var(--second-color);
-    margin: 14px;
-    font-size: 23px;
+    margin: 10px;
+    font-size: 20px;
     text-transform: capitalize;
     /* margin: 60px 0 32px;
     max-width: 400px; */
@@ -554,11 +586,12 @@ header .continar .form i {
 }
 .Projects .text-proj .skills-co {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
     position: relative;
     font-weight: 900;
+    margin-top: 10px;
 }
 @media (max-width:767px) {
     .Projects .text-proj .skills-co {
@@ -566,12 +599,12 @@ header .continar .form i {
         text-align: center;
     }
 }
-.Projects .skills-co .COM-PRO {}
 .Projects .skills-co span {
     color: var(--second-color);
     font-size: 22px;
+    
 }
-.Projects .skills-co .seens span + p {
+.Projects .skills-co  p {
+    margin-top: 0;
 }
-.Projects .our-proj .text-proj .image-proj {}
 /* End Projects */
