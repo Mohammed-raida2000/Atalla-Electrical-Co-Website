@@ -111,7 +111,7 @@ header .continar {
 }
 header .continar a h3 {
     margin: 0;
-    top: 58px;
+    top: 67px;
     position: relative;
     color: var(--text-color);
     text-decoration: none;
@@ -135,8 +135,9 @@ header .continar .Logo {
     top: 2%;
 }
 header .continar .Logo img {
-    width: 85px;
+    width: 47px;
     position: absolute;
+    left: 20px;
 }
 header  nav {
     width: 100%;
@@ -650,19 +651,47 @@ header .continar .form i {
 /* Start footer */
 .footer {
     padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);
     background-color: black;
     color: white;
-
 }
 .footer .foot {
-
 }
-.footer .foot img {}
-.footer .foot h3 {}
+.footer  .contact-footer {
+    display: flex;
+    justify-content: space-between;
+    color: var(--pri-fontcolor);
+}
+.footer .foot img {
+    width: 45px;
+    display: block;
+    position: relative;
+    bottom: -45px;
+}
+.footer .foot h3 {
+    position: absolute;
+    left: 57px;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
 .footer .foot .text-foot {
-
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    position: relative;
+    align-items: center;
 }
-.footer .foot .contact-footer {
-
+.footer  .icon-contact {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 28px;
+    align-items: center;
+    top: 38px;
+    position: relative;
+    font-size: 30px;
+}
+.footer .icon-contact i {
+    color: var(--text-color);
 }
 /* end  footer */
