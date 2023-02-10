@@ -662,11 +662,25 @@ header .continar .form i {
     justify-content: space-between;
     color: var(--pri-fontcolor);
 }
+@media (max-width:767px) {
+    .footer .contact-footer {
+        display: block;
+        text-align: center;
+        margin: 30px 0 0;
+}
+}
 .footer .foot img {
     width: 45px;
     display: block;
     position: relative;
     bottom: -45px;
+}
+@media (max-width:767px) {
+    .footer .foot img{
+        left: 40%;
+        bottom: 35px;
+        display: initial;
+    }
 }
 .footer .foot h3 {
     position: absolute;
@@ -674,12 +688,23 @@ header .continar .form i {
     font-size: 25px;
     letter-spacing: 5px;
 }
+@media (max-width:767px) {
+        .footer .foot h3{
+        left: 25%;
+        bottom: 27px;
+    }
+}
 .footer .foot .text-foot {
     display: flex;
     justify-content: flex-end;
     gap: 30px;
     position: relative;
     align-items: center;
+}
+@media (max-width:767px) {
+    .footer .foot .text-foot {
+        justify-content: center;
+    }
 }
 .footer  .icon-contact {
     display: flex;
@@ -690,6 +715,11 @@ header .continar .form i {
     top: 38px;
     position: relative;
     font-size: 30px;
+}
+@media (max-width:767px) {
+    .footer .icon-contact{
+        display: initial;
+    }
 }
 .footer .icon-contact i {
     color: var(--text-color);
