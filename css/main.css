@@ -709,6 +709,7 @@ header .continar .form i {
 /* End about-us*/
 /* Start footer */
 .footer {
+    padding-top: var(--padding-section);
     padding-bottom: var(--padding-section);
     background-color: black;
     color: white;
