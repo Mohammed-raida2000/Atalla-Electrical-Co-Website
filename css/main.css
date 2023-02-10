@@ -648,14 +648,70 @@ header .continar .form i {
     margin-left: 5px;
 }
 /* End Team */
+/* start-about-us */
+.Abouts {
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);
+    font-weight: normal;
+}
+.Abouts .aboutus h2 {
+    font-size: 40px;
+    text-align: center;
+    color: var(--second-color);
+    text-transform: uppercase;
+}
+.Abouts .aboutus p {
+    color: var(--pri-fontcolor);
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    margin-bottom:58px;
+    line-height: 2;
+}
+@media (max-width:767px) {
+    .Abouts .aboutus p {
+        display: block;
+        text-align: center;
+    }
+}
+.Abouts .OVER-CO {
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+    gap: 70px;
+    font-weight: 400;
+    text-align: left;
+}
+@media (max-width:767px) {
+    .Abouts .OVER-CO {
+        display: block;
+        text-align: center;
+    }
+}
+.Abouts .OVER-CO .vison ,
+.Abouts .OVER-CO .vison.mission {}
+
+.Abouts .OVER-CO  i {
+    line-height: 2;
+    max-width: 500px;
+    text-align: center;
+    display: block
+}
+.Abouts .OVER-CO span {
+    color: var(--main-color);
+    font-size: 15px;
+    text-align: center;
+}
+.Abouts .OVER-CO i ~ p {
+    line-height: 2;
+    text-align: center;
+}
+/* End about-us*/
 /* Start footer */
 .footer {
-    padding-top: var(--padding-section);
     padding-bottom: var(--padding-section);
     background-color: black;
     color: white;
-}
-.footer .foot {
 }
 .footer  .contact-footer {
     display: flex;
@@ -666,8 +722,7 @@ header .continar .form i {
     .footer .contact-footer {
         display: block;
         text-align: center;
-        margin: 30px 0 0;
-}
+        margin: 30px 0 0;}
 }
 .footer .foot img {
     width: 45px;
@@ -676,7 +731,7 @@ header .continar .form i {
     bottom: -45px;
 }
 @media (max-width:767px) {
-    .footer .foot img{
+    .footer .foot img {
         left: 40%;
         bottom: 35px;
         display: initial;
@@ -689,7 +744,7 @@ header .continar .form i {
     letter-spacing: 5px;
 }
 @media (max-width:767px) {
-        .footer .foot h3{
+        .footer .foot h3 {
         left: 25%;
         bottom: 27px;
     }
@@ -718,7 +773,7 @@ header .continar .form i {
 }
 @media (max-width:767px) {
     .footer .icon-contact{
-        display: initial;
+        display: initial; 
     }
 }
 .footer .icon-contact i {
