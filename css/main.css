@@ -314,11 +314,11 @@ header .continar .form i {
     background-image: url(../image/services-left-dec.png);
     background-repeat: no-repeat;
     position: absolute;
-    left: 50%;
+    left: 35%;
     rotate: 270deg;
-    bottom: -266px;
+    bottom: -280px;
     width: 261px;
-    height: 368px;
+    height: 360px;
     z-index: -1;
 }
 .Servies .continar .page-Serv {
@@ -688,9 +688,6 @@ header .continar .form i {
         text-align: center;
     }
 }
-.Abouts .OVER-CO .vison ,
-.Abouts .OVER-CO .vison.mission {}
-
 .Abouts .OVER-CO  i {
     line-height: 2;
     max-width: 500px;
