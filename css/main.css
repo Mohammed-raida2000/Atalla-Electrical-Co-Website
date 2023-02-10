@@ -775,4 +775,19 @@ header .continar .form i {
 .footer .icon-contact i {
     color: var(--text-color);
 }
+.footer .continar .dev {
+    bottom: -40px;
+    position: relative;
+}
+.footer .continar .dev p {
+    text-align: center;
+    font-size: 20px;
+}
+.footer .continar .dev {
+    bottom: -40px;
+    position: relative;
+}
+.footer .continar .dev span {
+    color: var(--main-color);
+}
 /* end  footer */
