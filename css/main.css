@@ -298,7 +298,6 @@ header .continar .form i {
     border-radius: 50%;
     margin-right: 10px;
 }
-
 .Slider .bools .Active {
     background: var(--text-color);
     border-color: var(--second-color);
@@ -307,14 +306,13 @@ header .continar .form i {
 /* Start Servies */
 .Servies {
     padding-bottom: var(--padding-section);
-    
 }
 .Servies::before {
     content: '';
     background-image: url(../image/services-left-dec.png);
     background-repeat: no-repeat;
     position: absolute;
-    left: 35%;
+    left: 24px;
     rotate: 270deg;
     bottom: -280px;
     width: 261px;
@@ -444,7 +442,7 @@ header .continar .form i {
 }
 @media (max-width:767px) {
     .Sales .info-bar .box img {
-        width: 156px;
+        width: 130px;
         height: 74px;
 }
 }
