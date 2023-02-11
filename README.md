@@ -3,7 +3,7 @@
 # Overview
 ## The challenge :
 * **Apersonal challenge** for the company in which work as an electrical engineer...
-    - create website using HTML and CSS only and try to make CSS FrameWork.
+    - create website using HTML and CSS only.
 # Screenshots
 
 # Links
