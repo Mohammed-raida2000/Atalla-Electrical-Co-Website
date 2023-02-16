@@ -651,6 +651,7 @@ header .continar .form i {
     padding-top: var(--padding-section);
     padding-bottom: var(--padding-section);
     font-weight: normal;
+    background-image: url(../image/pexels-gradienta-7130469.jpg);
 }
 .Abouts .aboutus h2 {
     font-size: 40px;
