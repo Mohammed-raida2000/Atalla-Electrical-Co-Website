@@ -1,8 +1,8 @@
 # Attalh company  website 
-* It`s a prototype of Atallah Electrical Company 
+* It`s a prototype of Atalla Electrical Company 
 # Overview
 ## The challenge :
-* **Apersonal challenge** for the company in which work as an electrical engineer...
+* **Apersonal challenge** 
     - create website using HTML and CSS only.
 # Screenshots
 ![](https://github.com/Mohammed-raida2000/Attallh-Website/blob/main/image/HOUSELIGTHING.png)
